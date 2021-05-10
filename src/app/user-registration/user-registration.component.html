@@ -1,0 +1,25 @@
+<div class="mx-auto mt-5" id="div">
+    <h2 id="head1" class="text-center text-white">User Registration Form</h2>
+    <hr>
+   
+    <!--User reg. form-->
+    <form #ref="ngForm" (ngSubmit)="addUserData()">
+  
+      <div>
+        <label for="un">Username</label>
+        <input type="text" class="form-control" name="username" id="un" [(ngModel)]=userObj.username >
+      </div>
+  
+      <div>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" class="form-control" name="dob" id="dob"  [(ngModel)]=userObj.dob >
+      </div>
+  
+      <div>
+        <label for="em">Email</label>
+        <input type="email" class="form-control" name="email" id="em"  [(ngModel)]=userObj.email >
+      </div>
+  
+      <button type="submit" class="btn d-block mx-auto m-3">Register</button>
+    </form>
+  

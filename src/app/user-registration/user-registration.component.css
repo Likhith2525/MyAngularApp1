@@ -1,0 +1,15 @@
+#head1{
+    background-color:darkslategrey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+
+#div{
+    max-width: 700px;
+}
+.btn{
+    background-color: slateblue;
+    color: white;
+}
+    
