@@ -45,6 +45,16 @@ export class ProductsComponent {
       description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
       productImage:"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5577975.jpg"
       }
-  ]
+  ];
+
+  productsSentByChild=[];
+  cnt:number=0;
+
+  getProductDetailsFromChild(productTitle){
+    this.productsSentByChild.push(productTitle)
+    this.cnt=this.cnt+1;
+  }
+
+
 
 }

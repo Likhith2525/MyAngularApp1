@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input,EventEmitter, Output} from '@angular/core';
 import { Product } from '../models/product.model';
 
 @Component({
@@ -8,7 +8,16 @@ import { Product } from '../models/product.model';
 })
 export class ProductDetailsComponent  {
 
+  //to receive data from parent as input
+  @Input() productObj:Product; //add input decorator ...import from @angular/core first
 
-  @Input() productObj:Product;
 
+   //create a custom event
+   @Output() myEvent=new EventEmitter()   //from @angular/core only
+   
+   sendProductDetailsToParent(productTitle){
+
+    this.myEvent.emit(productTitle);
+
+   }
 }
