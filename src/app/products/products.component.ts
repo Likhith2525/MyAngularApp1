@@ -12,39 +12,49 @@ export class ProductsComponent {
   products:Product[]=[
 
     {
-    productTitle:"Technology-1",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://youmatter.world/app/uploads/sites/2/2019/11/tech-planet.jpg"
+    productTitle:"Chitti",
+    description:"Jathi Ratnalu",
+    productImage:"https://c.saavncdn.com/289/Chitti-From-Jathi-Ratnalu--Telugu-2021-20210111121001-500x500.jpg"
     },
     {
-    productTitle:"Technology-2",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://apicms.thestar.com.my/uploads/images/2020/08/24/831125.jpg"
-    },
-    
-    {
-    productTitle:"Technology-3",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://itconsultingindubai.files.wordpress.com/2016/03/choosing-a-technology-solution.jpg"
+    productTitle:"Tharagathi Gadhi",
+    description:"Colour Photo",
+    productImage:"https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1598527201/srch_adityamusic_INA092016931.jpg"
     },
     
     {
-    productTitle:"Technology-4",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://itconsultingindubai.files.wordpress.com/2016/03/choosing-a-technology-solution.jpg"
+    productTitle:"Life Of Ram",
+    description:"Jaanu",
+    productImage:"https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1580565560/srch_adityamusic_INA092016787.jpg"
+    },
+    
+    {
+    productTitle:"Choosale Kallaraa",
+    description:"SR Kalyanamandapam",
+    productImage:"https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/music/8903245971109/1604560235/srch_hungama_57576689.jpg"
     },
 
     {
-      productTitle:"Technology-5",
-      description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-      productImage:"https://wallpaperaccess.com/full/4755970.jpg"
-      },
+    productTitle:"Maguva Maguva",
+    description:"Vakeel Saab",
+    productImage:"https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1583654379/srch_adityamusic_INA092016838.jpg"
+    },
       
-      {
-      productTitle:"Technology-6",
-      description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-      productImage:"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5577975.jpg"
-      }
+    {
+     productTitle:"Maate Vinadhuga",
+     description:"Taxiwaala",
+     productImage:"https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1540540188/srch_adityamusic_INA091816090.jpg"
+    },
+    {
+     productTitle:"Undiporaadhey",
+     description:"Hushaaru",
+     productImage:"https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/Hushaaru.jpg"
+     },
+     {
+     productTitle:"Chukkala Chunni",
+     description:"SR Kalyanamandapam",
+     productImage:"https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/CHUKKALA_CHUNNI%20.jpg"
+     },
   ];
 
   productsSentByChild=[];
