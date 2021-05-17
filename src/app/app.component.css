@@ -1,3 +1,7 @@
 h5{
     font-family: 'Lemonada', cursive;
 }
+
+.active{
+    font-weight:bold;
+}
