@@ -1,8 +1,19 @@
-<p class="text-center text-danger">NUMBER OF SONGS IN FAVOURITES: {{cnt}}</p>
-<span *ngFor="let title of productsSentByChild" class="text-warning">{{title}} ,</span>
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5 mb-5">
-    <div class="col" *ngFor="let prObj of products" >
-        <app-product-details [productObj]=prObj (myEvent)="getProductDetailsFromChild($event)"></app-product-details>
-    </div>
+<!--pills-->
+<ul class="nav nav-pills justify-content-evenly mt-3">
+    <li class="nav-item">
+      <a class="nav-link " routerLink="telugu" routerLinkActive="active">Telugu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="hindi" routerLinkActive="active">Hindi</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="english" routerLinkActive="active">English</a>
+    </li>
+  
+</ul>
+
+
+<div class="container">
+    <router-outlet></router-outlet>
 </div>

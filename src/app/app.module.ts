@@ -13,6 +13,10 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { TeluguComponent } from './telugu/telugu.component';
+import { HindiComponent } from './hindi/hindi.component';
+import { EnglishComponent } from './english/english.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { ContactusComponent } from './contactus/contactus.component';
     RegisterComponent,
     LoginComponent,
     ContactusComponent,
+    TeluguComponent,
+    HindiComponent,
+    EnglishComponent,
+    PagenotfoundComponent,
     
   ],
   imports: [

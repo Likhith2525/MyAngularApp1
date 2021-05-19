@@ -1,5 +1,10 @@
-p{
-    color:#a5e1ad;
-    font-size:large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+li{
+    background-color: black;
+}
+li a{
+    color:#dc3545;
+}
+
+active{
+    background-color: #dc3545;
 }
