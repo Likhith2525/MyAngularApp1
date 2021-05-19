@@ -14,7 +14,6 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ContactusComponent } from './contactus/contactus.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +25,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     HomeComponent,
     RegisterComponent,
     LoginComponent,
-    ContactusComponent
+    ContactusComponent,
+    
   ],
   imports: [
     BrowserModule,
