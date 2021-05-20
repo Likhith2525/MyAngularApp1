@@ -1,3 +1,13 @@
 .container{
     width: 85%;
 }
+.carousel-control-next-icon{
+    background-color: black;
+    border-radius:18px;
+    background-size: 60%;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+    border-radius:18px;
+    background-size: 60%;
+}
