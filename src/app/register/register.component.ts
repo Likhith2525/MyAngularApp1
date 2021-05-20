@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent implements OnInit,OnDestroy{
 
-  constructor() { }
+  constructor() {
+   }
 
-  ngOnInit(): void {
-  }
+   ngOnInit(){
+    console.log("register-constructor is executed")
+
+   }
+   ngOnDestroy(){
+     console.log("reg-component is destroyed")
+   }
 
 }
