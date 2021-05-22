@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { TestService} from "../test.service";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+
+  n:string="English Songs";
+  constructor(private testObj:TestService) { }
 
   ngOnInit(): void {
+    this.testObj.setData(this.n);
   }
 
 }
