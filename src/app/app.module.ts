@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { TeluguComponent } from './telugu/telugu.component';
 import { HindiComponent } from './hindi/hindi.component';
 import { EnglishComponent } from './english/english.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
+import { DataComponent } from './data/data.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +37,15 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     HindiComponent,
     EnglishComponent,
     PagenotfoundComponent,
+    MobilesComponent,
+    DataComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],
