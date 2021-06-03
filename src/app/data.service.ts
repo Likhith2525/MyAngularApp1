@@ -16,9 +16,13 @@ export class DataService {
     return this.hc.get<any>("https://reqres.in/api/unknown")
   }
 
-  getusersdata():Observable<any>{
+  getjsonusersdata():Observable<any>{
     //http get
     return this.hc.get<any>("https://jsonplaceholder.typicode.com/users")
   }
   
+  getreqresusersdata():Observable<any>{
+    //http get
+    return this.hc.get<any>("https://reqres.in/api/users?page=2")
+  }
 }

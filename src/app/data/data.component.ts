@@ -9,7 +9,8 @@ import { DataService } from '../data.service';
 export class DataComponent implements OnInit {
 
   colorsdata:any;
-  usersdata:any;
+  jsonusersdata:any;
+  reqresusersdata:any;
 
 
   //inject obj of DataService class
@@ -27,15 +28,26 @@ export class DataComponent implements OnInit {
     }
     )
 
-    this.dsObj.getusersdata().subscribe(
+    this.dsObj.getjsonusersdata().subscribe(
       data=>{
         //assign users data
-        this.usersdata=data;
+        this.jsonusersdata=data;
       },
       err=>{
         console.log("users data error is",err)
       }
       )
+
+
+      this.dsObj.getreqresusersdata().subscribe(
+        data=>{
+          //assign users data
+          this.reqresusersdata=data;
+        },
+        err=>{
+          console.log("users data error is",err)
+        }
+        )
   }
 
 }

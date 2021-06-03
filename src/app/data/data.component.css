@@ -1,6 +1,18 @@
 td:hover{
     background-color:#d9534f;
 }
-table{
-    font-size: smaller;
+
+.card img{
+    height: 150px;
+}
+
+.card{
+    background-color: rgb(212, 202, 204);
+}
+
+@media only screen and (min-width:384px) and (max-width:575px){
+    .row-cols-s-1{
+        max-width: 70.33%;
+        margin: auto;
+    }
 }
