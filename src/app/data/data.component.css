@@ -7,9 +7,15 @@ td:hover{
 }
 
 .card{
-    background-color: rgb(212, 202, 204);
+    background-color: rgb(190, 181, 183);
+
 }
 
+.card:hover{
+    background-color: rgb(241, 171, 185);
+
+    
+}
 @media only screen and (min-width:384px) and (max-width:575px){
     .row-cols-s-1{
         max-width: 70.33%;

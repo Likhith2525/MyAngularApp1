@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { DataService } from '../data.service';
 
 @Component({
@@ -6,8 +7,9 @@ import { DataService } from '../data.service';
   templateUrl: './data.component.html',
   styleUrls: ['./data.component.css']
 })
-export class DataComponent implements OnInit {
+export class DataComponent implements OnInit,OnDestroy {
 
+  mySubscription:Subscription;
   colorsdata:any;
   jsonusersdata:any;
   reqresusersdata:any;
@@ -18,7 +20,7 @@ export class DataComponent implements OnInit {
 
   //obj initialization logic
   ngOnInit() {
-  this.dsObj.getcolorsdata().subscribe(
+  this.mySubscription=this.dsObj.getcolorsdata().subscribe(
     data=>{
       //assign colors data
       this.colorsdata=data;
@@ -50,4 +52,9 @@ export class DataComponent implements OnInit {
         )
   }
 
+
+
+  ngOnDestroy(){
+    this.mySubscription.unsubscribe();
+  }
 }
