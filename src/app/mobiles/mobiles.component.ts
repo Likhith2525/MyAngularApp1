@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
 import { Product } from '../models/product.model';
+import { TestService } from '../test.service';
 
 @Component({
   selector: 'app-mobiles',
@@ -9,21 +9,21 @@ import { Product } from '../models/product.model';
 })
 export class MobilesComponent {
 
-  // mobiles:Product[]=[];
+  mobiles:Product[]=[];
 
-  // //inject obj of DataService clas
-  // constructor(private dsObj:DataService) { }
+  //inject obj of DataService clas
+   constructor(private tsObj:TestService) { }
 
-  // //obj initialization logic
-  // ngOnInit() {
-  // this.dsObj.getmobilesdata().subscribe(
-  //   data=>{
-  //     this.mobiles=data;
-  //   },
-  //   err=>{
-  //     console.log("error is",err)
-  //   }
-  //   )
-  // }
+   //obj initialization logic
+    ngOnInit() {
+     this.tsObj.getmobilesdata().subscribe(
+     data=>{
+       this.mobiles=data;
+     },
+     err=>{
+       console.log("error is",err)
+     }
+     )
+   }
 
 }

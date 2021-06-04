@@ -1,96 +1,19 @@
-<div class="row"> 
-    <h1 class="text-danger text-center mb-3">Colors Data</h1>
-
-    <table class="table table-dark table-bordered border-light text-white text-center">
-        <thead>
-            <tr class="table-danger">
-                <th>#</th>
-                <th>name</th>
-                <th>year</th>
-                <th>color</th>
-                <th>pantone_value</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let apiObj of colorsdata.data">
-                <td>{{apiObj.id}}</td>
-                <td>{{apiObj.name}}</td>
-                <td>{{apiObj.year}}</td>
-                <td>{{apiObj.color}}</td>
-                <td>{{apiObj.pantone_value}}</td>
-
-            </tr>
-        </tbody>
-    </table>
-</div>  
-
-
-<!--users data from jsonplaceholder-->
-
-<div class="row "> 
-    <h1 class="text-danger text-center mb-3">JSON Users Data</h1>
-
-    <table class="table table-dark table-bordered border-light text-white text-center">
-        <thead>
-            <tr class="table-danger">
-                <th rowspan="3">id</th>
-                <th rowspan="3">name</th>
-                <th rowspan="3">username</th>
-                <th rowspan="3">email</th>
-                <th colspan="6">Address</th>
-                <th rowspan="3">Phone</th>
-                <th rowspan="3">Website</th>
-                <th colspan="3">Company</th>
-            </tr>
-            <tr  class="table-danger">
-                <th rowspan="2">street</th>
-                <th rowspan="2">suite</th>
-                <th rowspan="2">City</th>
-                <th rowspan="2">Zipcode</th>
-                <th colspan="2">Geo</th>
-                <th rowspan="2">Name</th>
-                <th rowspan="2">CatchPhrase</th>
-                <th rowspan="2">bs</th>
-            </tr>
-            <tr class="table-danger">
-                <th>Lat</th>
-                <th>Lng</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let usersObj of jsonusersdata">
-                <td>{{usersObj.id}}</td>
-                <td>{{usersObj.name}}</td>
-                <td>{{usersObj.username}}</td>
-                <td>{{usersObj.email}}</td>
-                <td>{{usersObj.address.street}}</td>
-                <td>{{usersObj.address.suite}}</td>
-                <td>{{usersObj.address.city}}</td>
-                <td>{{usersObj.address.zipcode}}</td>
-                <td>{{usersObj.address.geo.lat}}</td>
-                <td>{{usersObj.address.geo.lng}}</td>
-                <td>{{usersObj.phone}}</td>
-                <td>{{usersObj.website}}</td>
-                <td>{{usersObj.company.name}}</td>
-                <td>{{usersObj.company.catchPhrase}}</td>
-                <td>{{usersObj.company.bs}}</td>
-
-            </tr>
-        </tbody>
-    </table>
-</div>  
-
-
 <!--users data from reqres-->
 <h1 class="text-danger text-center mb-3">REQRES Users Data</h1>
-<div class="row row-cols-s-1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5 mb-5">
- <div class="col" *ngFor="let reqresObj of reqresusersdata.data">
-        <div class="card">
-          <div class="card-body">
-           <img src={{reqresObj.avatar}} class="card-img-top" alt="...">
-          <h5 class="card-title mt-2">{{reqresObj.first_name}} {{reqresObj.last_name}} <span><button href="#" class="btn-dark float-end" >{{reqresObj.id}}</button></span></h5>
-          <p class="card-text">{{reqresObj.email}}</p>
-           </div>
-        </div>
-    </div>
+<div class="background">
+  <table class="table text-white text-center">
+    <thead>
+      <tr>
+        <th>ID</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let userObj of users">
+         <td>
+           <button class="btn btn-sm btn-warning" (click)="onSelectId(userObj.id)">{{userObj.id}}</button>
+          </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

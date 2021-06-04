@@ -9,8 +9,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { TeluguComponent } from './telugu/telugu.component';
-import { MobilesComponent } from './mobiles/mobiles.component';
 import { DataComponent } from './data/data.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
 
 
 
@@ -23,9 +24,11 @@ const routes: Routes = [
     {path:'telugu',component:TeluguComponent},
     {path:'hindi',component:HindiComponent},
     {path:'english',component:EnglishComponent},
+    {path:'mobiles',component:MobilesComponent},
     {path:'',redirectTo:'/products/telugu',pathMatch:'full'}
   ]},
-  {path:'mobiles',component:DataComponent},
+  {path:'users',component:DataComponent},
+  {path:'users/:id',component:UserdetailsComponent},
   {path:'',redirectTo:'/login',pathMatch:'full'},
   {path:'**',component:PagenotfoundComponent}
 ];

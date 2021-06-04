@@ -16,6 +16,11 @@ td:hover{
 
     
 }
+.background{
+    background-image:url('../../assets/Subtle-Prism.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 @media only screen and (min-width:384px) and (max-width:575px){
     .row-cols-s-1{
         max-width: 70.33%;

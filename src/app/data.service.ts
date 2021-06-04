@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from 'rxjs';
-import { Product } from './models/product.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,19 +9,16 @@ export class DataService {
 
   //inject HttpClient service object
   constructor(private hc:HttpClient) { }
-   
-  getcolorsdata():Observable<any>{
+ 
+  getposts():Observable<any>{
     //http get
-    return this.hc.get<any>("https://reqres.in/api/unknown")
+    return this.hc.get<any>("https://jsonplaceholder.typicode.com/posts")
   }
 
-  getjsonusersdata():Observable<any>{
-    //http get
-    return this.hc.get<any>("https://jsonplaceholder.typicode.com/users")
+  getPostById(id):Observable<any>{
+    return this.hc.get("https://jsonplaceholder.typicode.com/posts/"+id)
   }
-  
-  getreqresusersdata():Observable<any>{
-    //http get
-    return this.hc.get<any>("https://reqres.in/api/users?page=2")
-  }
+
+
+
 }

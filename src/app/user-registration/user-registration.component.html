@@ -3,21 +3,21 @@
     <hr>
    
     <!--User reg. form-->
-    <form #ref="ngForm" (ngSubmit)="addUserData()">
+    <form>
   
       <div>
         <label for="un">Username</label>
-        <input type="text" class="form-control" name="username" id="un" [(ngModel)]=userObj.username >
+        <input type="text" class="form-control" name="username" id="un">
       </div>
   
       <div>
         <label for="dob">Date Of Birth</label>
-        <input type="date" class="form-control" name="dob" id="dob"  [(ngModel)]=userObj.dob >
+        <input type="date" class="form-control" name="dob" id="dob"  >
       </div>
   
       <div>
         <label for="em">Email</label>
-        <input type="email" class="form-control" name="email" id="em"  [(ngModel)]=userObj.email >
+        <input type="email" class="form-control" name="email" id="em"  >
       </div>
   
       <button type="submit" class="btn d-block mx-auto m-3">Register</button>

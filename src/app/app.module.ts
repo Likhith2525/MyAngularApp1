@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { ProductsComponent } from './products/products.component';
-import { FooterComponent } from './footer/footer.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
@@ -18,8 +17,9 @@ import { TeluguComponent } from './telugu/telugu.component';
 import { HindiComponent } from './hindi/hindi.component';
 import { EnglishComponent } from './english/english.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { MobilesComponent } from './mobiles/mobiles.component';
 import { DataComponent } from './data/data.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,6 @@ import { DataComponent } from './data/data.component';
     UserRegistrationComponent,
     UserListComponent,
     ProductsComponent,
-    FooterComponent,
     ProductDetailsComponent,
     HomeComponent,
     RegisterComponent,
@@ -36,9 +35,10 @@ import { DataComponent } from './data/data.component';
     TeluguComponent,
     HindiComponent,
     EnglishComponent,
-    PagenotfoundComponent,
     MobilesComponent,
+    PagenotfoundComponent,
     DataComponent,
+    UserdetailsComponent,
     
   ],
   imports: [

@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { DataService } from '../data.service';
 
@@ -10,41 +11,20 @@ import { DataService } from '../data.service';
 export class DataComponent implements OnInit,OnDestroy {
 
   mySubscription:Subscription;
-  colorsdata:any;
-  jsonusersdata:any;
-  reqresusersdata:any;
+  users:any;
 
 
   //inject obj of DataService class
-  constructor(private dsObj:DataService) { }
+  constructor(private dsObj:DataService,private router:Router) { }
 
   //obj initialization logic
   ngOnInit() {
-  this.mySubscription=this.dsObj.getcolorsdata().subscribe(
-    data=>{
-      //assign colors data
-      this.colorsdata=data;
-    },
-    err=>{
-      console.log("colors data error is",err)
-    }
-    )
+ 
 
-    this.dsObj.getjsonusersdata().subscribe(
-      data=>{
-        //assign users data
-        this.jsonusersdata=data;
-      },
-      err=>{
-        console.log("users data error is",err)
-      }
-      )
-
-
-      this.dsObj.getreqresusersdata().subscribe(
+    this.mySubscription=this.dsObj.getposts().subscribe(
         data=>{
           //assign users data
-          this.reqresusersdata=data;
+          this.users=data;
         },
         err=>{
           console.log("users data error is",err)
@@ -52,6 +32,11 @@ export class DataComponent implements OnInit,OnDestroy {
         )
   }
 
+
+  onSelectId(id){
+
+    this.router.navigateByUrl('users/'+id)
+  }
 
 
   ngOnDestroy(){
